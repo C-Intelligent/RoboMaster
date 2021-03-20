@@ -13,6 +13,7 @@
 ---
 
 <br />
+
 ## 通信机制概述
 
 ---
@@ -37,6 +38,7 @@
 - 区别在于上位机获取下位机数据包的的对应关系是一对一的，且获取的时刻就是数据包消亡的时刻
 
 <br />
+
 ## 相关代码说明
 ---
 
@@ -1058,10 +1060,6 @@ void data_handle(uint8_t *p_frame)
     case GAME_INFO_ID:
       memcpy(&game_information, data_addr, data_length);
     break;
-    
-    //............
-    //............
-
   }
 }
 ```
